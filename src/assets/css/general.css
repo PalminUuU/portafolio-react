@@ -40,11 +40,12 @@ body{
   background-size: cover;
   background-position: center;
   filter: blur(5px); /* Ajusta el valor para cambiar el nivel de desenfoque */
-  z-index: -1; /* Coloca el fondo desenfocado detrás del contenido */
+  z-index: -3; /* Coloca el fondo desenfocado detrás del contenido */
 }
 
 .color-des{
   background-color: rgba(0, 0, 0, 0.64);
+  z-index: -3;
 }
 
 .color-nombre{
@@ -60,5 +61,5 @@ body{
   background-position:center;
   margin: 0 auto; /* Centra horizontalmente */
   margin-top: -75px; /* Ajusta para posicionar correctamente sobre el texto */
-  z-index: 2; /* Coloca la foto por encima del fondo desenfocado */
+  z-index: 0; /* Coloca la foto por encima del fondo desenfocado */
 }
