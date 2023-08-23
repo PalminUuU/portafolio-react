@@ -4,8 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-} 
+}
 
+.Inicio {
+  /* Otras propiedades de estilo... */
+  overflow: hidden; /* Para ocultar el desborde de las secciones */
+}
 
 body{
   height: 100vh;
@@ -37,8 +41,8 @@ body{
   width: 100%;
   height: 100%;
   background-image: url('../images/bg.jpg');
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position:initial;
   filter: blur(5px); /* Ajusta el valor para cambiar el nivel de desenfoque */
   z-index: -3; /* Coloca el fondo desenfocado detrás del contenido */
 }
@@ -46,6 +50,7 @@ body{
 .color-des{
   background-color: rgba(0, 0, 0, 0.64);
   z-index: -3;
+  margin-bottom: -75px;
 }
 
 .color-nombre{
@@ -62,4 +67,11 @@ body{
   margin: 0 auto; /* Centra horizontalmente */
   margin-top: -75px; /* Ajusta para posicionar correctamente sobre el texto */
   z-index: 0; /* Coloca la foto por encima del fondo desenfocado */
+}
+
+#seccion2 {
+  text-align: center;
+  padding: 20px 0; /* Agrega espacio alrededor del h4 */
+  background-color: white; /* Fondo blanco para la segunda sección */
+  min-height: calc(100vh - 200px); /* Altura mínima para que se vea la sección en blanco al hacer scroll */
 }
