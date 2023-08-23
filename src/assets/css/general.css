@@ -9,7 +9,6 @@
 
 body{
   height: 100vh;
-  background-color: #29353bcf ;
 }
 
 .div_principal {
@@ -22,5 +21,44 @@ body{
 
 .content-container {
   text-align: center;
-  color: #eae6e6;
+  color: #ffffff;
+}
+
+.fondo{
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Ajusta el valor para cambiar el nivel de desenfoque */
+  z-index: -1; /* Coloca el fondo desenfocado detrás del contenido */
+}
+
+.color-des{
+  background-color: rgba(0, 0, 0, 0.64);
+}
+
+.color-nombre{
+  color: bisque;
+}
+
+.profile-picture {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* Forma circular */
+  background-image: url('../images/profile.jpg');
+  background-size:contain;
+  background-position:center;
+  margin: 0 auto; /* Centra horizontalmente */
+  margin-top: -75px; /* Ajusta para posicionar correctamente sobre el texto */
+  z-index: 2; /* Coloca la foto por encima del fondo desenfocado */
 }
