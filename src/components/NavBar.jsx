@@ -2,36 +2,23 @@ import React, { useEffect } from "react";
 import $ from "jquery"; // Importa jQuery
 import "../assets/css/nav.css";
 
+function no_check(){
+  $("#click").prop("checked", false);
+}
+
 export default function NavBar() {
-  useEffect(() => {
-    $(window).on("scroll", () => {
-      const navbar = $("nav");
-      const content = $(".content");
-      const scrollY = $(window).scrollTop();
-
-      if (navbar && content) {
-        if (scrollY > 80) {
-          navbar.css("position", "fixed");
-          content.css("marginTop", "80px"); // Ajusta el margen superior según la altura del navbar
-        } else {
-          navbar.css("position", "relative");
-          content.css("marginTop", "0");
-        }
-      }
-    });
-  }, []);
-
   return (
     <nav>
-      <div className="logo">Portafolio</div>
+     <div className="logo">{"<Daniel Palma/>"}</div>
       <input type="checkbox" id="click"/>
       <label htmlFor="click" className="menu-btn">
         <i className="fas fa-bars"></i>
       </label>
       <ul>
-        <li><a className="active" href="#">Inicio</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a id="nav_incio" className="active" href="#seccion_incio" onClick={no_check}>Inicio</a></li>
+        <li><a id ="nav_acerca" href="#seccion_acerca" onClick={no_check}>Acerca de mi</a></li>
+        <li><a id ="nav_proyecto" href="#">Proyectos</a></li>
+        <li><a id="nav_contacto" href="#">Contacto</a></li>
       </ul>
     </nav>
   )

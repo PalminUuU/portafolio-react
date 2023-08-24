@@ -69,9 +69,38 @@ body{
   z-index: 0; /* Coloca la foto por encima del fondo desenfocado */
 }
 
-#seccion2 {
+#seccion_acerca {
   text-align: center;
   padding: 20px 0; /* Agrega espacio alrededor del h4 */
   background-color: white; /* Fondo blanco para la segunda sección */
   min-height: calc(100vh - 200px); /* Altura mínima para que se vea la sección en blanco al hacer scroll */
 }
+
+#seccion_acerca {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Otros estilos necesarios para tu diseño */
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Agregar espacio a los lados */
+  margin-left: 150px;
+  /* Otros estilos necesarios para el contenedor */
+}
+
+h1, h3 {
+  margin: 0;
+  /* Agregar un poco de espacio superior e inferior */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
