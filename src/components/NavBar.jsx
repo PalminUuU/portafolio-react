@@ -18,7 +18,7 @@ export default function NavBar() {
         <li><a id="nav_incio" className="active" href="#seccion_incio" onClick={no_check}>Inicio</a></li>
         <li><a id ="nav_acerca" href="#seccion_acerca" onClick={no_check}>Acerca de mi</a></li>
         <li><a id ="nav_proyecto" href="#seccion_proyectos" onClick={no_check}>Proyectos</a></li>
-        <li><a id="nav_contacto" href="#">Contacto</a></li>
+        <li><a id="nav_contacto" href="#seccion_contacto" onClick={no_check}>Contacto</a></li>
       </ul>
     </nav>
   )

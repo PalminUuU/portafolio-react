@@ -16,20 +16,30 @@ function HomePage(props) {
         }
       });
       $.each(visibleDivs, function (key, val) {
-        if (val == "seccion_acerca") {
+        console.log(val)
+        if (val == "seccion_acr") {
           $("#nav_incio").removeClass("active");
           $("#nav_acerca").addClass("active");
           $("#nav_proyecto").removeClass("active");
+          $("#nav_contacto").removeClass("active");
         }
         if (val == "seccion_incio") {
           $("#nav_incio").addClass("active");
           $("#nav_acerca").removeClass("active");
           $("#nav_proyecto").removeClass("active");
+          $("#nav_contacto").removeClass("active");
         }
-        if (val == "seccion_proyectos") {
+        if (val == "seccion_pr") {
           $("#nav_incio").removeClass("active");
           $("#nav_acerca").removeClass("active");
           $("#nav_proyecto").addClass("active");
+          $("#nav_contacto").removeClass("active");
+        }
+        if (val == "seccion_contacto") {
+          $("#nav_incio").removeClass("active");
+          $("#nav_acerca").removeClass("active");
+          $("#nav_proyecto").removeClass("active");
+          $("#nav_contacto").addClass("active");
         }
       });
       // IDs de los divs visibles
@@ -96,7 +106,7 @@ function HomePage(props) {
 
         <div id="seccion_acerca">
           <div>
-            <div className="tittle">
+            <div id="seccion_acr" className="tittle">
               <h1>Acerca de mi</h1>
             </div>
             <div className="text_container">
@@ -242,7 +252,7 @@ function HomePage(props) {
 
         <div id="seccion_proyectos">
           <div>
-            <div className="tittle">
+            <div id="seccion_pr" className="tittle">
               <h1>Proyectos</h1>
             </div>
             <div class="wrapper">
@@ -356,7 +366,12 @@ function HomePage(props) {
               <div class="box">
                 <div class="front-face">
                   <div class="icon">
-                  <box-icon name='instagram-alt' size="80px" type='logo' animation='burst' ></box-icon>
+                    <box-icon
+                      name="instagram-alt"
+                      size="80px"
+                      type="logo"
+                      animation="burst"
+                    ></box-icon>
                   </div>
                   <span>Copia de Instagram</span>
                 </div>
@@ -373,7 +388,12 @@ function HomePage(props) {
               <div class="box">
                 <div class="front-face">
                   <div class="icon">
-                  <box-icon name='shopping-bag' size="80px" flip='horizontal' animation='burst' ></box-icon>
+                    <box-icon
+                      name="shopping-bag"
+                      size="80px"
+                      flip="horizontal"
+                      animation="burst"
+                    ></box-icon>
                   </div>
                   <span>Lista de compras</span>
                 </div>
@@ -390,7 +410,12 @@ function HomePage(props) {
               <div class="box">
                 <div class="front-face">
                   <div class="icon">
-                  <box-icon name='store-alt' size="80px" animation='tada' flip='horizontal' ></box-icon>
+                    <box-icon
+                      name="store-alt"
+                      size="80px"
+                      animation="tada"
+                      flip="horizontal"
+                    ></box-icon>
                   </div>
                   <span>Tienda en Linea</span>
                 </div>
@@ -403,7 +428,29 @@ function HomePage(props) {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
 
+        <div id="seccion_contacto">
+          <div className="tittle">
+            <h1>Contacto</h1>
+          </div>
+
+          <div className="ccn">
+            <div className="">
+            <box-icon name='phone' color='#1c1a1c' ></box-icon>
+            <p></p>
+              <span>Telefono:</span>
+              <p></p>
+              <span>5612934850</span>
+            </div>
+
+            <div className="">
+            <box-icon name='envelope' color='#1c1a1c' ></box-icon>
+            <p></p>
+              <span>Correo:</span><p></p>
+              <span>danypalma27@gmail.com</span>
             </div>
           </div>
         </div>

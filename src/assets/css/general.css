@@ -73,6 +73,7 @@ body{
   padding: 20px 0;
   background-color: white;
   min-height: calc(100vh - 300px); 
+  margin-bottom: 160px
 }
 
 .tittle{
@@ -206,6 +207,18 @@ body{
   transform: translateY(-110px) rotateX(90deg);
 }
 
+#seccion_contacto {
+  text-align: center;
+  padding: 20px 0;
+  background-color: white;
+  min-height: calc(100vh - 200px); 
+}
+
+.ccn{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
 
 
 
