@@ -95,3 +95,20 @@ section.active .modal-box {
   border-radius: 40px;
   background-color: aquamarine;
 }
+
+
+@media (max-width: 500px) {
+  table, th, td {
+    border: 1px solid;
+    height: 80px;
+    width: 300px;
+    font-size: 40px;
+    text-align: center
+  }
+  .modal-box{
+    height: 200px;
+    max-width: 300px;
+    font-size: 13px;
+  }
+
+}
