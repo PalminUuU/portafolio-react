@@ -16,7 +16,7 @@ function HomePage(props) {
         }
       });
       $.each(visibleDivs, function (key, val) {
-        console.log(val)
+        console.log(val);
         if (val == "seccion_acr") {
           $("#nav_incio").removeClass("active");
           $("#nav_acerca").addClass("active");
@@ -270,9 +270,19 @@ function HomePage(props) {
                 <div class="back-face">
                   <span>Juego del Gato</span>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rem in deleniti vitae beatae veritatis aliquid porro
-                    perspiciatis dolores impedit ad.
+                    El clasico juego tic-tac-toe o gato, esta desarrollado
+                    enteramente con React utilizano un sistema de matrices y
+                    haciendo uso de los hooks nativos de React para manajar
+                    desde las marcas en el tablero hasta determinar ganador o
+                    empate según sea el caso.
+                    <ul>
+                      <li>
+                        <a href="/gato">Ir al Juego</a>
+                      </li>
+                      <li>
+                        <a>Link del codigo</a>
+                      </li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -439,17 +449,18 @@ function HomePage(props) {
 
           <div className="ccn">
             <div className="">
-            <box-icon name='phone' color='#1c1a1c' ></box-icon>
-            <p></p>
+              <box-icon name="phone" color="#1c1a1c"></box-icon>
+              <p></p>
               <span>Telefono:</span>
               <p></p>
               <span>5612934850</span>
             </div>
 
             <div className="">
-            <box-icon name='envelope' color='#1c1a1c' ></box-icon>
-            <p></p>
-              <span>Correo:</span><p></p>
+              <box-icon name="envelope" color="#1c1a1c"></box-icon>
+              <p></p>
+              <span>Correo:</span>
+              <p></p>
               <span>danypalma27@gmail.com</span>
             </div>
           </div>
