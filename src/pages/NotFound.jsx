@@ -1,13 +1,16 @@
-import $, { each, valHooks } from 'jquery';
-import React, { useState, useEffect } from 'react';
+import $, { each, valHooks } from "jquery";
+import React, { useState, useEffect } from "react";
 
 function NotFound(props) {
-
-    return (
-        <div className="Inicio">
-            <div><h1>ERROR 404, No Existe la Pagina</h1></div>
-        </div>
-    );
+  return (
+    <div className="">
+     <main>
+  <h1>4<span><i class="fas fa-ghost"></i></span>4</h1>
+  <h2>Error 404: Página no encontrada</h2>
+<p>Lo sentimos, la página a la que intentas acceder no existe.</p>
+</main>
+    </div>
+  );
 }
 
 export default NotFound;

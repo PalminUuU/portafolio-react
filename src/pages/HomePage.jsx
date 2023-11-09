@@ -271,16 +271,16 @@ function HomePage(props) {
                   <span>Juego del Gato</span>
                   <p>
                     El clasico juego tic-tac-toe o gato, esta desarrollado
-                    enteramente con React utilizano un sistema de matrices y
-                    haciendo uso de los hooks nativos de React para manajar
-                    desde las marcas en el tablero hasta determinar ganador o
+                    enteramente con React utilizano un array bidimencional y
+                    haciendo uso de los hooks nativos de React para manejar
+                    desde las marcas en el tablero hasta como determinar al ganador o
                     empate según sea el caso.
                     <ul>
                       <li>
                         <a href="/gato">Ir al Juego</a>
                       </li>
                       <li>
-                        <a>Link del codigo</a>
+                        <a href="https://github.com/PalminUuU/portafolio-react/blob/48e6151906eb713ecc4a646ecea4e74783c75fac/src/pages/Gato.jsx">Link del codigo</a>
                       </li>
                     </ul>
                   </p>

@@ -8,13 +8,13 @@ function no_check(){
 
 export default function NavBar() {
   return (
-    <nav>
+    <nav id="nv">
      <div className="logo">{"<Daniel Palma/>"}</div>
       <input type="checkbox" id="click"/>
       <label htmlFor="click" className="menu-btn">
         <i className="fas fa-bars"></i>
       </label>
-      <ul>
+      <ul id="ull">
         <li><a id="nav_incio" className="active" href="#seccion_incio" onClick={no_check}>Inicio</a></li>
         <li><a id ="nav_acerca" href="#seccion_acerca" onClick={no_check}>Acerca de mi</a></li>
         <li><a id ="nav_proyecto" href="#seccion_proyectos" onClick={no_check}>Proyectos</a></li>

@@ -1,20 +1,15 @@
 import React, { useState, useEffect } from "react";
-import $, { each, valHooks } from 'jquery';
+import $, { each, valHooks } from "jquery";
 import "../assets/css/tables.css";
 import "boxicons";
 
 function Gato(props) {
-
-    $(document).ready(function () {
+  $(document).ready(function () {
     const section = document.querySelector("section"),
-            overlay = document.querySelector(".overlay")
+      overlay = document.querySelector(".overlay");
 
-    overlay.addEventListener("click", () =>
-        section.classList.remove("active")
-    );
- 
-
-});
+    overlay.addEventListener("click", () => section.classList.remove("active"));
+  });
 
   const [selector, setSelector] = useState(1);
   const [nuevoArray, setNuevoArray] = useState([
@@ -26,8 +21,7 @@ function Gato(props) {
   const [empate, setEmpate] = useState(false);
 
   useEffect(() => {
-    const checkWinner = () => {
-      // Verificar filas, columnas y diagonales (código de verificación del ganador)
+    const verificarGanador = () => {
       for (let i = 0; i < 3; i++) {
         if (
           nuevoArray[i][0] &&
@@ -38,7 +32,6 @@ function Gato(props) {
         }
       }
 
-      // Verificar columnas
       for (let j = 0; j < 3; j++) {
         if (
           nuevoArray[0][j] &&
@@ -49,7 +42,6 @@ function Gato(props) {
         }
       }
 
-      // Verificar diagonales
       if (
         nuevoArray[0][0] &&
         nuevoArray[0][0] === nuevoArray[1][1] &&
@@ -67,17 +59,17 @@ function Gato(props) {
       return null;
     };
 
-    const ganadorActual = checkWinner();
+    const ganadorActual = verificarGanador();
     if (ganadorActual) {
-        const section = document.querySelector("section")
-        section.classList.add("active")
+      const section = document.querySelector("section");
+      section.classList.add("active");
       setGanador(ganadorActual);
     } else {
       // Verificar empate
       const lleno = nuevoArray.every((row) => row.every((cell) => cell !== ""));
       if (lleno) {
-        const section = document.querySelector("section")
-        section.classList.add("active")
+        const section = document.querySelector("section");
+        section.classList.add("active");
         setEmpate(true);
       }
     }
@@ -93,8 +85,8 @@ function Gato(props) {
   };
 
   const reiniciarJuego = () => {
-    const section = document.querySelector("section")
-    section.classList.remove("active")
+    const section = document.querySelector("section");
+    section.classList.remove("active");
     setNuevoArray([
       ["", "", ""],
       ["", "", ""],
@@ -112,7 +104,6 @@ function Gato(props) {
         <div id="tablero">
           <table>
             <tbody>
-              {/* Renderizar el tablero */}
               <tr>
                 <td onClick={() => handleCellClick(0, 0)}>
                   {nuevoArray[0][0]}
@@ -154,29 +145,44 @@ function Gato(props) {
       <section>
         <span class="overlay"></span>
         <div class="modal-box">
-        {ganador && (
-        <div className="mensaje">
-            <div className="iconos">
-        <box-icon name='party' size="50px" animation='tada' color='#ec0d4e' ></box-icon>
-          <p>¡El jugador {ganador} ha ganado!</p>
-          <box-icon name='balloon' size="50px" type='solid' animation='tada' rotate='90' color='#eac432' ></box-icon>
-          </div>
-          <br />
-          <button className="reset" onClick={reiniciarJuego}>Reiniciar Juego</button>
-        </div>
-      )}
-      {empate && (
-        <div className="mensaje">
-            <div className="iconos">
-            <box-icon name='sad' size="50px" color='#f11037' ></box-icon>
-          <p>¡Empate!</p>
-          <box-icon name='sad' size="50px" color='#f11037' ></box-icon>
-          </div>
-          <br />
-          <button className="reset" onClick={reiniciarJuego}>Reiniciar Juego</button>
-        </div>
-      )}
-
+          {ganador && (
+            <div className="mensaje">
+              <div className="iconos">
+                <box-icon
+                  name="party"
+                  size="50px"
+                  animation="tada"
+                  color="#ec0d4e"
+                ></box-icon>
+                <p>¡El jugador {ganador} ha ganado!</p>
+                <box-icon
+                  name="balloon"
+                  size="50px"
+                  type="solid"
+                  animation="tada"
+                  rotate="90"
+                  color="#eac432"
+                ></box-icon>
+              </div>
+              <br />
+              <button className="reset" onClick={reiniciarJuego}>
+                Reiniciar Juego
+              </button>
+            </div>
+          )}
+          {empate && (
+            <div className="mensaje">
+              <div className="iconos">
+                <box-icon name="sad" size="50px" color="#f11037"></box-icon>
+                <p>¡Empate!</p>
+                <box-icon name="sad" size="50px" color="#f11037"></box-icon>
+              </div>
+              <br />
+              <button className="reset" onClick={reiniciarJuego}>
+                Reiniciar Juego
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </div>
