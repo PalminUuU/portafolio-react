@@ -168,3 +168,37 @@ form {
 .btn-add:hover {
 	background-color: var(--azul-hover);
 }
+
+@media (max-width: 600px) {
+    .card-to-do {
+        max-width: 100%; /* Cambia el ancho máximo al 100% en pantallas más pequeñas */
+        margin-top: 0; /* Elimina el margen superior en pantallas más pequeñas */
+    }
+
+    .counter-todos {
+        flex-direction: column; /* Cambia la dirección del eje principal para el conteo de tareas */
+        align-items: center; /* Centra los elementos en pantallas más pequeñas */
+        text-align: center; /* Centra el texto */
+        margin: 20px 0; /* Reduce el margen superior e inferior */
+    }
+
+    .counter-todos span {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-top: 10px; /* Añade un margen superior para separar el número del texto */
+    }
+
+    .ul_todo {
+        margin-top: 20px; /* Reduce el margen superior */
+    }
+
+    .btn-delete,
+    .btn-edit {
+        padding: 10px; /* Reduce el padding de los botones */
+        font-size: 14px; /* Reduce el tamaño del texto de los botones */
+    }
+
+    .input-add,
+    .btn-add {
+        font-size: 14px; /* Reduce el tamaño del texto del input y del botón */
+    }
+}
