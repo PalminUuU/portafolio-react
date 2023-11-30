@@ -172,7 +172,8 @@ form {
 @media (max-width: 600px) {
     .card-to-do {
         max-width: 100%; /* Cambia el ancho máximo al 100% en pantallas más pequeñas */
-        margin-top: 0; /* Elimina el margen superior en pantallas más pequeñas */
+        margin-top: 0;
+        margin-left: 6px; /* Elimina el margen superior en pantallas más pequeñas */
     }
 
     .counter-todos {
@@ -194,11 +195,23 @@ form {
     .btn-delete,
     .btn-edit {
         padding: 10px; /* Reduce el padding de los botones */
-        font-size: 14px; /* Reduce el tamaño del texto de los botones */
+        font-size: 10px; /* Reduce el tamaño del texto de los botones */
     }
 
     .input-add,
     .btn-add {
-        font-size: 14px; /* Reduce el tamaño del texto del input y del botón */
+        font-size: 10px; /* Reduce el tamaño del texto del input y del botón */
     }
+
+    .input-update {
+        border: none;
+        font-weight: 500;
+        font-family: inherit;
+        font-size: 10px;
+        color: #555;
+        width: 100%;
+        /* background-color: #000; */
+        outline: none;
+    }
+    
 }
