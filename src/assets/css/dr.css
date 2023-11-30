@@ -267,3 +267,17 @@ body.dark .home .text{
 .hide{
   display: none;
 }
+.cont{
+    width: 90%;
+    height: 50%;
+    margin-top: 5px;
+    margin-left: 80px;
+}
+table,th,td{
+    border: 1px solid;
+}
+
+.selected{
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+}

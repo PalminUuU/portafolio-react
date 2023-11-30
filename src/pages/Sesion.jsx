@@ -8,7 +8,8 @@ import axios from "axios";
 function login() {
   const email = $("#email_log").val();
   const psw = $("#psw_log").val();
-  $.getJSON("http://localhost:5000/consulta/" + email + "/" + psw,
+  //$.getJSON("http://localhost:5000/consulta/" + email + "/" + psw,
+  $.getJSON("https://render-simr.onrender.com/consulta/" + email + "/" + psw,
     function (respuesta) {
       if (respuesta.token) {
         localStorage.clear()

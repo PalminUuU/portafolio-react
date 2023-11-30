@@ -102,38 +102,38 @@ function Gato(props) {
       <div id="contenedor">
         <h1>¡Juego del Gato!</h1>
         <div id="tablero">
-          <table>
+          <table class="tb">
             <tbody>
               <tr>
-                <td onClick={() => handleCellClick(0, 0)}>
+                <td class="tb" onClick={() => handleCellClick(0, 0)}>
                   {nuevoArray[0][0]}
                 </td>
-                <td onClick={() => handleCellClick(0, 1)}>
+                <td class="tb" onClick={() => handleCellClick(0, 1)}>
                   {nuevoArray[0][1]}
                 </td>
-                <td onClick={() => handleCellClick(0, 2)}>
+                <td class="tb" onClick={() => handleCellClick(0, 2)}>
                   {nuevoArray[0][2]}
                 </td>
               </tr>
               <tr>
-                <td onClick={() => handleCellClick(1, 0)}>
+                <td class="tb" onClick={() => handleCellClick(1, 0)}>
                   {nuevoArray[1][0]}
                 </td>
-                <td onClick={() => handleCellClick(1, 1)}>
+                <td class="tb" onClick={() => handleCellClick(1, 1)}>
                   {nuevoArray[1][1]}
                 </td>
-                <td onClick={() => handleCellClick(1, 2)}>
+                <td class="tb" onClick={() => handleCellClick(1, 2)}>
                   {nuevoArray[1][2]}
                 </td>
               </tr>
               <tr>
-                <td onClick={() => handleCellClick(2, 0)}>
+                <td class="tb" onClick={() => handleCellClick(2, 0)}>
                   {nuevoArray[2][0]}
                 </td>
-                <td onClick={() => handleCellClick(2, 1)}>
+                <td class="tb" onClick={() => handleCellClick(2, 1)}>
                   {nuevoArray[2][1]}
                 </td>
-                <td onClick={() => handleCellClick(2, 2)}>
+                <td class="tb" onClick={() => handleCellClick(2, 2)}>
                   {nuevoArray[2][2]}
                 </td>
               </tr>

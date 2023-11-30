@@ -1,4 +1,4 @@
-table, th, td {
+.tb{
     border: 1px solid;
     height: 150px;
     width: 600px;
@@ -98,7 +98,7 @@ section.active .modal-box {
 
 
 @media (max-width: 500px) {
-  table, th, td {
+  .tb {
     border: 1px solid;
     height: 80px;
     width: 300px;

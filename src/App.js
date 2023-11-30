@@ -6,6 +6,7 @@ import NotFound from "./pages/NotFound";
 import Gato from "./pages/Gato";
 import Sesion from "./pages/Sesion";
 import Home_dr from "./pages/Home_dr";
+import Lista from "./pages/Lista"
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <Route path="/gato" element={<Gato/>}/>
       <Route path="/sesion" element={<Sesion/>}/>
       <Route path="/home" element={<Home_dr/>}/>
+      <Route path="/lista" element={<Lista/>}/>
       <Route path="*" element={<NotFound/>} />
       </Routes>
     </BrowserRouter>

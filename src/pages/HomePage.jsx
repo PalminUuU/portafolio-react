@@ -270,11 +270,8 @@ function HomePage(props) {
                 <div class="back-face">
                   <span>Juego del Gato</span>
                   <p>
-                    El clasico juego tic-tac-toe o gato, esta desarrollado
-                    enteramente con React utilizano un array bidimencional y
-                    haciendo uso de los hooks nativos de React para manejar
-                    desde las marcas en el tablero hasta como determinar al ganador o
-                    empate según sea el caso.
+                  El clásico juego de tic-tac-toe, también conocido como gato, ha sido desarrollado por completo utilizando React. Se emplea un array bidimensional y se hacen uso de los hooks nativos de React para gestionar aspectos clave del juego, desde las marcas en el tablero hasta la lógica para determinar al ganador o declarar empate según corresponda.
+                  Este enfoque permite una implementación eficiente y estructurada del juego, aprovechando la potencia de React para una experiencia de usuario fluida y dinámica. La interacción del jugador y la lógica del juego están cuidadosamente manejadas mediante componentes y hooks, asegurando un juego de tic-tac-toe auténtico y divertido para disfrutar
                     <ul>
                       <li>
                         <a href="/gato">Ir al Juego</a>
@@ -410,9 +407,16 @@ function HomePage(props) {
                 <div class="back-face">
                   <span>Lista de compras</span>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rem in deleniti vitae beatae veritatis aliquid porro
-                    perspiciatis dolores impedit ad.
+                  Esta lista de compras está desarrollada completamente en React, haciendo uso de un reducer de Redux para gestionar el estado de la lista. Además, se han empleado componentes separados para mejorar la organización y el rendimiento de la aplicación. Asimismo, se utilizan hooks personalizados para manejar el estado de las tareas, junto con otro hook encargado de gestionar el envío del formulario para nuevas tareas.
+                  Este enfoque modular permite una estructura más limpia y mantenible, facilitando el desarrollo y la comprensión del código. La aplicación se beneficia de las ventajas de React y Redux, proporcionando una experiencia eficiente y fluida al usuario al gestionar las compras de manera intuitiva y ordenada.
+                  <ul>
+                      <li>
+                        <a href="/lista">Ir a la App</a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/PalminUuU/portafolio-react/blob/48e6151906eb713ecc4a646ecea4e74783c75fac/src/pages/Gato.jsx">Link del codigo</a>
+                      </li>
+                    </ul>
                   </p>
                 </div>
               </div>
